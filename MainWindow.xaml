@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Mozi" Height="450" Width="800">
     <Grid Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}">
-        <DataGrid Margin="0,0,448,0" BorderBrush="Black" BorderThickness="4px" Background="#FF6AFFD5"/>
-        <Button Content="Jegyek száma" HorizontalAlignment="Left" Margin="495,50,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FF6AFFD5" Foreground="Black" FontWeight="Bold" FontSize="22"/>
-        <Button Content="Legdrágább" HorizontalAlignment="Left" Margin="495,116,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FF6AFFD5" Foreground="Black" FontWeight="Bold" FontSize="22"/>
-        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="495,182,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FFFF8383" Foreground="Black" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
+        <DataGrid x:Name="dGrid" Margin="0,0,448,0" BorderBrush="Black" BorderThickness="4px" Background="#FF6AFFD5" IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow"/>
+        <Button x:Name="jegyekSzama" Content="Jegyek száma" HorizontalAlignment="Left" Margin="495,50,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FF6AFFD5" Foreground="Black" FontWeight="Bold" FontSize="22" Click="jegyekSzama_Click"/>
+        <Button x:Name="lgDragabb" Content="Legdrágább" HorizontalAlignment="Left" Margin="495,116,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FF6AFFD5" Foreground="Black" FontWeight="Bold" FontSize="22" Click="lgDragabb_Click"/>
+        <Button x:Name="Exit" Content="Kilépés" HorizontalAlignment="Left" Margin="495,182,0,0" VerticalAlignment="Top" Height="61" Width="159" BorderThickness="4px" BorderBrush="Black" Background="#FFFF8383" Foreground="Black" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
 
     </Grid>
 </Window>
